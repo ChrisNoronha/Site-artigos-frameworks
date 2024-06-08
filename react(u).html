@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <style>
+
+  </style>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="mostraSlides(1)">
+  <div class="item subgrid">
+    <div><a href="index.html">
+        <center>Angular JS</center>
+      </a></div>
+    <div><a href="react.html">
+        <center>React JS</center>
+      </a></div>
+    <div><a href="pure.html">
+        <center>Pure CSS</center>
+      </a></div>
+    <div><a href="jquery.html">
+        <center>jQuery</center>
+      </a></div>
+  </div>
+  <div class="item5">
+    <center> React JS </center>
+  </div>
+  <br>
+  <script src="script.js"></script>
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+
+
+    <div class="meusSlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="react.jpg" style="width: 105%;">
+      <div class="text">Exemplo de código e design de página com React JS</div>
+    </div>
+    <div class="meusSlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="reactjs2.jpg" style="width: 100%;">
+      <div class="text">Exemplo de react através de código</div>
+    </div>
+
+    <div class="meusSlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="praticareact.jpg" style="width: 100%;">
+      <div class="text">Na prática como funciona o "Framework" React</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="slideAtual(1)"></span>
+    <span class="dot" onclick="slideAtual(2)"></span>
+    <span class="dot" onclick="slideAtual(3)"></span>
+  </div>
+  <br>
+
+  <div>
+
+    <section class="container grid grid-template-columns-3">
+      <div class="item subgrid2">
+        <div><a href="index.html">
+            <center>Conceito</center>
+          </a></div>
+        <div><a href="react(u).html">
+            <center>Utilização</center>
+          </a></div>
+        <div><a href="react(pec).html">
+            <center>Prós e Contras</center>
+          </a></div>
+
+
+
+
+      </div>
+      <section class="grid">
+        <div class="item">‬‬‬‬‬‬‬‬<b>A utilização do framework React Js:</b>
+          <br><br>
+          ‬‬‬‬‬‬‬‬‎ ‎ ‎‎O React permite dividir uma página inteira em partes, chamadas de componentes. Assim é possível
+          trabalhar cada um desses componentes de forma individual e independente.
+          Também é possível reaproveitar códigos entre estes componentes, usando o mesmo comando para modelos de
+          elementos como botões, imagens, menus, etc. Isso facilita e otimiza o desenvolvimento de uma interface,
+          pois permite manter uma unidade entre os componentes de forma prática.
+          O React também é conhecido por sua flexibilidade, permitindo a criação de pequenas linhas de código no
+          desenvolvimento de uma interface sem que seja necessário o uso de outras ferramentas de build, ou seja,
+          ferramentas de desenvolvimento.
+          <br><br>
+          ‬‬‬‬‬‬‬‬<b>O que o React usa para aumentar o desempenho?</b>
+          <br><br>
+          ‬‬‬‬‬‬‬‬‎ ‎ ‎‎O React é inteligente o suficiente para minimizar o número de operações que custam processamento
+          de DOM, principalmente, quando tratamos de renderização e alteração de elementos na interface.
+          Para que isso ocorra, internamente, o React utiliza diversas técnicas que visam aumentar o desempenho das
+          aplicações. Dessa forma, as interfaces se tornam bem mais rápidas e com performances bem superiores ao
+          JavaScript puro.
+          <br><br </div>
+
+      </section>
+
+  </div>
+
+
+
+  <div class="item">
+    <center>Exemplo aplicado de uso do framework React JS, clique no Botão de like abaixo</center>
+  </div>
+  <br>
+  <center>
+    <div id="like_button_container"></div>
+  </center>
+  <br>
+  <div class="item8"><a href="https://playcode.io/1498860">Link para outro exemplo</a></div>
+  <br>
+
+  <hr>
+  <style>
+    .button-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+
+
+  <br><br>
+  <hr>
+  <section class="grid">
+    <div class="item3">Criado por Talys & Christian</div>
+
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Adicione nosso componente React. -->
+    <script src="like_button.js"></script>
+
+</body>
+
+</html>

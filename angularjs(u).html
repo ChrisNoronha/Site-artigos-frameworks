@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <style>
+    body {
+      background-color: #e4ec7e;
+    }
+  </style>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="mostraSlides(1)">
+  <div class="item subgrid">
+    <div><a href="index.html">
+        <center>Angular JS</center>
+      </a></div>
+    <div><a href="react.html">
+        <center>React JS</center>
+      </a></div>
+    <div><a href="pure.html">
+        <center>Pure CSS</center>
+      </a></div>
+    <div><a href="jquery.html">
+        <center>jQuery</center>
+      </a></div>
+  </div>
+  <div class="item5">
+    <center>Angular JS </center>
+  </div>
+  <br>
+  <script src="script.js"></script>
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+
+    <div class="meusSlides fade">
+      <div class="numbertext">1 / 3</div>
+      <video width="1012" height="435" autoplay loop>
+        <source src="angularjs.mp4" type="video/mp4">
+        Ocorreu um erro ao reproduzir o vídeo.
+      </video>
+      <div class="text">Angular JS, Exemplo de adicionar com botão</div>
+    </div>
+
+    <div class="meusSlides fade">
+      <div class="numbertext">2 / 3</div>
+      <video width="1012" height="435" autoplay loop>
+        <source src="angularjs2.mp4" type="video/mp4">
+        Ocorreu um erro ao reproduzir o vídeo.
+      </video>
+      <div class="text">Angular JS, Exemplo de input e print logo abaixo da caixa de texto</div>
+    </div>
+
+    <div class="meusSlides fade">
+      <div class="numbertext">3 / 3</div>
+      <video width="1012" height="435" autoplay loop>
+        <source src="angularjs3.mp4" type="video/mp4">
+        Ocorreu um erro ao reproduzir o vídeo.
+      </video>
+      <div class="text">Angular JS, Exemplo de pesquisa e resultados em uma caixa de texto.</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="slideAtual(1)"></span>
+    <span class="dot" onclick="slideAtual(2)"></span>
+    <span class="dot" onclick="slideAtual(3)"></span>
+  </div>
+  <br>
+
+  <div>
+
+    <section class="container grid grid-template-columns-3">
+      <div class="item subgrid2">
+        <div><a href="index.html">
+            <center>Conceito</center>
+          </a></div>
+        <div><a href="angularjs(u).html">
+            <center>Utilização</center>
+          </a></div>
+        <div><a href="angularjs(pec).html">
+            <center>Prós e Contras</center>
+          </a></div>
+
+
+      </div>
+
+
+      <section class="grid">
+        <div class="item">‬‬‬‬‬‬‬‬‎ ‎ ‎‎ A utilização do framework AngularJS envolve os seguintes passos básicos:
+          <br><br>
+          ‬‬‬‬‬‬‬‬‎ ‎ ‎‎Incluir o AngularJS: Primeiramente, é necessário incluir o arquivo JavaScript do AngularJS na
+          página HTML. Isso pode ser feito por meio de um CDN (Content Delivery Network) ou fazendo o download e
+          referenciando o arquivo localmente.
+          <br><br>
+          ‬‬‬‬‬‬‬‬‎ ‎ ‎‎ Definir o módulo: O AngularJS organiza a aplicação em módulos, que são contêineres para
+          diferentes partes da aplicação. É necessário definir um módulo principal usando a função angular.module(),
+          especificando o nome do módulo e quaisquer dependências que ele possa ter.
+          <br><br>
+          ‬‬‬‬‬‬‬‬‎ ‎ ‎‎ Criar controladores: Os controladores são responsáveis por definir o comportamento da aplicação
+          e manipular os dados do modelo. Eles podem ser criados usando a função module.controller() e associados a uma
+          parte específica da visualização.
+          <br><br>
+          ‬‬‬‬‬‬‬‬‎ ‎ ‎‎ Vincular dados na visualização: O AngularJS fornece diretivas especiais que permitem vincular
+          dados do modelo à visualização. Essas diretivas podem ser usadas como atributos no HTML para exibir dados,
+          interagir com eventos do usuário e atualizar o modelo automaticamente. Alguns exemplos de diretivas populares
+          são ng-model, ng-bind, ng-click, entre outras.
+          <br><br>
+          ‬‬‬‬‬‬‬‬‎ ‎ ‎‎ Implementar serviços: Os serviços são usados para compartilhar dados e funcionalidades entre
+          controladores. Eles podem ser criados usando a função module.service() ou module.factory(). Os serviços podem
+          ser injetados nos controladores e outros componentes conforme necessário.
+
+          <br><br>
+          ‬‬‬‬‬‬‬‬‎ ‎ ‎‎Testar a aplicação: O AngularJS possui um conjunto robusto de ferramentas para testar os
+          componentes da aplicação. É possível escrever testes unitários e de integração usando frameworks como o
+          Jasmine ou o Karma para garantir que a aplicação esteja funcionando corretamente.
+          <br><br>
+          ‎ ‎ ‎‎Esses são apenas os passos básicos para usar o AngularJS. O framework oferece muitos recursos
+          adicionais, como diretivas personalizadas, filtros, validação de formulários, manipulação de eventos, entre
+          outros, que podem ser explorados para criar aplicativos web ricos e interativos.
+        </div>
+
+      </section>
+
+  </div>
+  <div ng-app="">
+
+    <div class="item">
+      <center>Exemplo aplicado de uso do framework Angular JS</center>
+    </div>
+    <div ng-app="">
+
+      <div class="item4">
+        <p>Escreva algo:</p>
+        <p>Texto a ser reescrito: <input type="text" ng-model="name"></p>
+        <p ng-bind="name"></p>
+      </div>
+    </div>
+    <br>
+    <div class="item8"><a href="https://www.w3bai.com/pt/angular/angular_examples.html#gsc.tab=0">Link para o
+        exemplo</a></div>
+    <br>
+    <hr>
+    <style>
+      .button-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #f7cf02;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+    </style>
+
+
+    <br><br>
+    <hr>
+
+    <div class="item3">Criado por Talys & Christian</div>
+
+
+  </div>
+
+
+</body>
+
+</html>

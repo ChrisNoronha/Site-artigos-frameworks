@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <style>
+    body {
+      background-color: #b7f0da;
+    }
+  </style>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="mostraSlides(1)">
+  <div class="item subgrid">
+    <div><a href="index.html">
+        <center>Angular JS</center>
+      </a></div>
+    <div><a href="react.html">
+        <center>React JS</center>
+      </a></div>
+    <div><a href="pure.html">
+        <center>Pure CSS</center>
+      </a></div>
+    <div><a href="jquery.html">
+        <center>jQuery</center>
+      </a></div>
+  </div>
+  <div class="item5">
+    <center>React JS </center>
+  </div>
+  <br>
+  <script src="script.js"></script>
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+
+    <div class="meusSlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="react.jpg" style="width: 105%;">
+      <div class="text">Exemplo de código e design de página com React JS</div>
+    </div>
+
+    <div class="meusSlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="reactjs2.jpg" style="width: 100%;">
+
+      <div class="text">Exemplo de react através de codigo</div>
+    </div>
+
+    <div class="meusSlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="praticareact.jpg" style="width: 100%;">
+      <div class="text">Na prática como funciona o "Framework" React.</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="slideAtual(1)"></span>
+    <span class="dot" onclick="slideAtual(2)"></span>
+    <span class="dot" onclick="slideAtual(3)"></span>
+  </div>
+  <br>
+
+  <div>
+
+    <section class="container grid grid-template-columns-3">
+      <div class="item subgrid2">
+        <div><a href="react.html">
+            <center>Conceito</center>
+          </a></div>
+        <div><a href="react(u).html">
+            <center>Utilização</center>
+          </a></div>
+        <div><a href="react(pec).html">
+            <center>Prós e Contras</center>
+          </a></div>
+
+
+      </div>
+
+
+      <section class="grid">
+        <div class="item">‬‬‬‬‬‬‬‬‎ ‎ ‎‎ O React é conhecido como uma biblioteca de JavaScript utilizado para a criação
+          de user interfaces (UI), ou interfaces do usuário em português.
+
+          Para deixar as coisas uma pouco mais claras, aqui vai uma breve explicação sobre o que é JavaScript e o que
+          são bibliotecas JavaScript:
+
+          JavaScript: linguagem de programação web, utilizada para controlar elementos dinâmicos, como banners, botões,
+          imagens e slides, e atualizar informações em tempo real, como gráficos, rankings, datas, contagens
+          regressivas
+          e etc.
+          Biblioteca JavaScript: conjunto de linhas de código JavaScript pré-prontos criadas pela comunidade, que podem
+          ser utilizadas em diversos projetos, desde interfaces mais simples de websites até interfaces mais complexas,
+          como o próprio Facebook.
+          <br><br>
+          ‎ ‎ ‎‎‬‬‬‬‬‬‬‬A biblioteca foi criada por um time de desenvolvedores do Facebook, em 2011, com a finalidade de
+          otimizar a
+          atualização do feed de notícias da rede social. No ano seguinte, o grupo Facebook, hoje conhecido como Meta,
+          passou a utilizar a eficiência do React no Instagram e outras redes sociais da empresa.
+          Em 2013, o React teve sua biblioteca de códigos aberta à comunidade, dando início à sua crescente
+          popularidade no mercado de tecnologia.
+          <br><br>
+
+        </div>
+
+      </section>
+
+
+  </div>
+
+
+  <div class="item">
+    <center>Exemplo aplicado de uso do framework React JS, clique no Botão de like abaixo</center>
+  </div>
+  <br>
+  <center>
+    <div id="like_button_container"></div>
+  </center>
+  <br>
+  <div class="item8"><a href="https://playcode.io/1498860">Link para outro exemplo</a></div>
+  <br>
+
+  <hr>
+
+  <style>
+    .button-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+
+  <br><br>
+  <hr>
+  <section class="grid">
+    <div class="item3">Criado por Talys & Christian</div>
+
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Adicione nosso componente React. -->
+    <script src="like_button.js"></script>
+</body>
+
+</html>
