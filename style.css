@@ -9,10 +9,11 @@ html {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+  width: 100%; /* Define a largura do contêiner para 100% da largura da tela */
+  margin: 0; /* Remove a margem para ocupar toda a largura */
+  max-width: none; /* Remova a largura máxima para garantir 100% de largura */
 }
+
 
 /* Hide the images by default */
 .meusSlides {
@@ -117,6 +118,7 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
+  width:100%;
 }
 
 .subgrid2 {
